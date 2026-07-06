@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/calc.ts","./src/data.ts","./src/main.tsx","./src/taxdata.ts","./src/types.ts","./src/components/breakdowncard.tsx","./src/components/foreignprofile.tsx","./src/components/header.tsx","./src/components/labeledslider.tsx","./src/components/modetoggle.tsx","./src/components/usprofile.tsx"],"version":"5.9.3"}
