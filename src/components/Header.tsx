@@ -5,24 +5,25 @@ export function Header() {
   return (
     <Box as="header" mb="8">
       <Flex align="center" justify="space-between" wrap="wrap" gap="4">
-        <HStack gap="3" align="center">
+        <HStack gap="3" align="center" minW="0">
           <Flex
             align="center"
             justify="center"
-            boxSize="12"
+            boxSize={{ base: '10', md: '12' }}
+            flexShrink="0"
             rounded="xl"
             bg="green.500/15"
             color="green.300"
             borderWidth="1px"
             borderColor="green.500/30"
           >
-            <Globe2 size={24} />
+            <Globe2 size={22} />
           </Flex>
-          <Box>
-            <Heading size="2xl" color="white" letterSpacing="-0.02em">
+          <Box minW="0">
+            <Heading size={{ base: 'xl', md: '2xl' }} color="white" letterSpacing="-0.02em">
               GeoComp
             </Heading>
-            <Text color="gray.400" fontSize="sm">
+            <Text color="gray.400" fontSize={{ base: 'xs', md: 'sm' }}>
               Global Compensation, Liquidity, and Purchasing Power Simulator
             </Text>
           </Box>

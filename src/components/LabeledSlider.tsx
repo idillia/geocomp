@@ -33,7 +33,7 @@ export function LabeledSlider({ label, value, min, max, step = 100, onChange }: 
   return (
     <Box>
       <HStack justify="space-between" align="center" mb="2.5" gap="3">
-        <Text fontSize="sm" color="gray.300" lineHeight="1.2">
+        <Text fontSize="sm" color="gray.300" lineHeight="1.2" flex="1" minW="0">
           {label}
         </Text>
         <HStack gap="1" flexShrink="0">
@@ -42,7 +42,7 @@ export function LabeledSlider({ label, value, min, max, step = 100, onChange }: 
           </Text>
           <Input
             size="sm"
-            width="6.5rem"
+            width="6rem"
             type="number"
             inputMode="numeric"
             value={text}

@@ -70,7 +70,7 @@ export default function App() {
   const usWins = delta >= 0
 
   return (
-    <Box minH="100vh" color="gray.100">
+    <Box minH="100vh" color="gray.100" overflowX="hidden">
       <Container maxW="6xl" py={{ base: '6', md: '10' }}>
         <Header />
 
@@ -118,9 +118,9 @@ export default function App() {
               <Text>keeps more each year</Text>
             </HStack>
           </VStack>
-          <VStack align="end" gap="0">
+          <VStack align={{ base: 'start', md: 'end' }} gap="0">
             <Text
-              fontSize="2xl"
+              fontSize={{ base: 'xl', md: '2xl' }}
               fontWeight="bold"
               color={delta >= 0 ? 'green.300' : 'orange.300'}
               letterSpacing="-0.02em"
